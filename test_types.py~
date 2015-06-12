@@ -1,0 +1,6 @@
+from xkcd_types import Types
+
+def test_int_add():
+    first = Types(1)
+    second = Types(2)
+    assert first + second == 'DONE'

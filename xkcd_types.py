@@ -23,10 +23,10 @@ class Types:
             return False,None
         
     def __add__(self,other):
-        if type(self.data) == types(int()) and type(other)==type(str()):
+        if type(self.data) == type(int()) and type(other)==type(str()):
             other = int(other)
             return str(self.data + other)
-        elif type(self.data) == types(str()) and type(other)==type(int()):
+        elif type(self.data) == type(str()) and type(other)==type(int()):
             data = int(self.data)
             return str(data+other)
         elif type(self.data)==type([]) and type(other)==type(int()):

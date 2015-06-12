@@ -30,7 +30,7 @@ class Types:
             data = int(self.data)
             return str(data+other)
         elif type(self.data)==type([]) and type(other)==type(int()):
-            is_seq,hint,offset = is_sequence(self.data):
+            is_seq,hint,offset = is_sequence(self.data)
             if is_seq:
                 if hint == "range":
                     if self.data[-1]+offset == other:
